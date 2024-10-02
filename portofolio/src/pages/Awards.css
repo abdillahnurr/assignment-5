@@ -1,4 +1,3 @@
-/* Main container */
 .awards-container {
     max-width: 1200px;
     margin: auto;
@@ -8,18 +7,16 @@
 
 .awards-container h1 {
     font-size: 2.5rem;
-    color: #180161; /* Purple color */
+    color: #180161;
     margin-bottom: 40px;
 }
 
-/* Grid layout for awards */
 .awards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
     gap: 20px;
 }
 
-/* Card styling */
 .award-card {
     background-color: #f5f5f5;
     border-radius: 10px;
@@ -29,13 +26,13 @@
 }
 
 .award-card:hover {
-    transform: translateY(-5px); /* Lift the card slightly on hover */
+    transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .award-card h2 {
     font-size: 1.5rem;
-    color: #180161; /* Purple color */
+    color: #180161;
     margin-bottom: 10px;
 }
 
@@ -45,7 +42,6 @@
     margin-bottom: 5px;
 }
 
-/* Organizer and year */
 .award-card .organizer {
     font-style: italic;
     color: #666;
@@ -56,7 +52,6 @@
     color: #333;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .awards-container h1 {
         font-size: 2rem;
