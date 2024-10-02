@@ -1,0 +1,31 @@
+.footer {
+    background-color: #180161; /* Deep purple background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media-links {
+    display: flex;
+    gap: 20px; /* Space between icons */
+}
+
+.social-media-links a {
+    color: white; /* Icon color */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-media-links a:hover {
+    color: #6a20ac; /* Lighter purple when hovering over the icon */
+}
+
+.rights {
+    color: #f4f4f4;
+}
+
+p {
+    margin: 0; /* Removes margin to align text properly */
+}

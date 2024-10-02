@@ -1,0 +1,62 @@
+/* Container styling */
+.interest-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    color: #333;
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+}
+
+/* Page heading */
+.interest-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #180161; /* Purple Color */
+    margin-bottom: 40px;
+}
+
+/* Interest block styling */
+.interest-block {
+    background-color: #f5f5f5; /* Light grey background for each block */
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+}
+
+.interest-block:hover {
+    transform: translateY(-5px); /* Lift the card slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+}
+
+.interest-block h2 {
+    font-size: 2rem;
+    color: #180161; /* Purple Color */
+    margin-bottom: 10px;
+}
+
+.interest-block p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .interest-container {
+        padding: 10px;
+    }
+
+    .interest-container h1 {
+        font-size: 2rem;
+    }
+
+    .interest-block h2 {
+        font-size: 1.5rem;
+    }
+
+    .interest-block p {
+        font-size: 1rem;
+    }
+}

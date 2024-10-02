@@ -1,0 +1,71 @@
+/* Container styling */
+.experience-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #f5f5f5; /* Light grey background */
+    color: #333; /* Dark grey text */
+}
+
+/* Block styling for each experience section */
+.experience-block {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect on experience block */
+.experience-block:hover {
+    transform: translateY(-5px); /* Lift the block slightly */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #333; /* Dark grey heading */
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #180161; /* Purple color for job titles */
+}
+
+.date {
+    font-style: italic;
+    color: #666; /* Grey for date */
+    margin-bottom: 10px;
+}
+
+/* List and list items */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #333; /* Dark text for list items */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .experience-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+}

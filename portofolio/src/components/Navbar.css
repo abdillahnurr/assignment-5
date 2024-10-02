@@ -1,0 +1,122 @@
+/* Navbar base styles */
+.navbar {
+    background-color: #180161; /* Deep purple background */
+    display: flex;
+    justify-content: space-between; /* Space between brand and content */
+    align-items: center;
+    padding: 20px 20px;
+}
+.navbar-toggler {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px; /* Adjust size as needed */
+    cursor: pointer;
+}
+
+/* Modified: navbar content to hide on small screens when toggled */
+.navbar-collapse {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end; /* Ensure nav items are on the right */
+}
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+li.nav-item {
+    margin: 0px;
+    padding: 0px;
+    background-color: #180161;
+}
+a.nav-link {
+    background-color: #180161;
+    border-color: transparent;
+}
+.nav-link {
+    color: white;
+    background-color: #180161;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #6a20ac;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-brand {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .navbar-toggler {
+        display: block;
+        order: -1;
+        margin-bottom: 10px;
+    }
+
+    .navbar-collapse {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-collapse.show {
+        display: flex;
+    }
+
+    .navbar-content {
+        width: 100%;
+        justify-content: center;
+        order: 2;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav-link {
+        text-align: center;
+        width: 100%;
+    }
+    .nav-link {
+        text-align: center;
+        padding: 8px 0;
+        width: 100%;
+    }
+
+    .social-icons {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+}

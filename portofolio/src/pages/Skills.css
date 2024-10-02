@@ -1,0 +1,43 @@
+.skills-container {
+    color: white; /* White text for visibility */
+    text-align: center; /* Center align the text */
+    padding: 20px; /* Padding for spacing */
+    margin: auto; /* Automatically adjust margins */
+    width: 100%; /* Full width */
+}
+
+ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0 auto; /* Center the list */
+    display: flex; /* Use flexbox for a flexible layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Align items in the center */
+}
+
+li {
+    margin: 10px 0; /* Margin between items */
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    display: flex; /* Use flex to align icon and text */
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Space between icon and text */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for interaction */
+}
+
+@media (min-width: 768px) {
+    ul {
+        flex-direction: row; /* Horizontal layout on larger screens */
+        justify-content: center; /* Center items horizontally */
+        flex-wrap: wrap; /* Wrap items to next line if space is insufficient */
+    }
+
+    li {
+        margin: 10px; /* Increase margin for better spacing */
+    }
+}
